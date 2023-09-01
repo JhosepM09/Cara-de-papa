@@ -1,0 +1,111 @@
+
+ #container{
+    width: 1000px;
+    height: 1000px;
+    text-align: center;
+    margin: 100px auto;
+    background: aqua;
+    position: relative;
+    z-index: 0;
+ }
+
+ #container .cara{
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top: 150px;
+    transition: .5s;
+    z-index: 1;
+    
+ }
+
+ .sombrero{
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top: 60px;
+    transition: .5s;
+    z-index: 2;
+ }
+ .bigote{
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top: 400px;
+    z-index: 2;
+ }
+ .nariz{
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top: 275px;
+    z-index: 3;
+ }
+ .ojo{
+    position: absolute;
+    left: 0;
+    right: 80px;
+    margin: 0 auto;
+    top: 210px;
+    transition: .5s;
+    z-index: 2;
+ }
+ .ojod{
+    position: absolute;
+    left: 80px;
+    right: 0;
+    margin: 0 auto;
+    top: 210px;
+    transition: .5s;
+    z-index: 2;
+ }
+
+ .pie{
+    position: absolute;
+    left: 0;
+    right: 150px;
+    margin: 0 auto;
+    top: 495px;
+ }
+ 
+ .pied{
+    position: absolute;
+    left: 150px;
+    right: 0;
+    margin: 0 auto;
+    top: 495px;
+ }
+
+ .oreja{
+    position: absolute;
+    left: 270px;
+    right: 0;
+    margin: 0 auto;
+    top: 180px;
+ }
+
+ .orejad{
+    position: absolute;
+    left: 0;
+    right: 270px;
+    margin: 0 auto;
+    top: 180px;
+ }
+
+ #container:hover .sombrero{
+    transform: translateY(-100px);
+ }
+
+ #container:hover .ojo{
+    transform: skew(50deg);
+ }
+ #container:hover .ojod{
+    transform: skew(-50deg);
+ }
+ #container:hover .cara{
+    transform: rotateY(-360deg);
+ }
